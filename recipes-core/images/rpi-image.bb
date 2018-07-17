@@ -1,7 +1,9 @@
-# Base this image on core-image-base
-include recipes-core/images/core-image-base.bb
+include recipes-core/images/rpi-test-image.bb
 
-COMPATIBLE_MACHINE = "^rpi$"
+DESCRIPTION = "Image for Raspberry Pi platform"
 
-IMAGE_INSTALL_append = " packagegroup-rpi-test"
+IMAGE_FEATURES += " \
+    ssh-server-openssh \
+"
 
+IMAGE_INSTALL += " htop strace"
