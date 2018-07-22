@@ -11,16 +11,24 @@ WIFI_SUPPORT = " \
 "
 
 DEV_TOOLS = " \
+    userland \
     strace \
 "
 
 EXTRA_TOOLS = " \
     htop \
     lshw \
+    ncurses \
+    git \
+"
+
+PI_STUFF = " \
+    raspi2fb \
 "
 
 IMAGE_INSTALL += " \
     ${WIFI_SUPPORT} \
     ${DEV_TOOLS} \
     ${EXTRA_TOOLS} \
+    ${PI_STUFF} \
 "

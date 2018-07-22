@@ -1,4 +1,4 @@
-##WIFI
+## WIFI
 
     # wpa_supplicant -B -i interface -c /etc/wpa_supplicant/wpa_supplicant.conf
     # wpa_cli
@@ -11,9 +11,9 @@
     > save_config
     OK
 
-##BlueTooth
+## BlueTooth
 
-##Camera
+## Camera
 
-###Reference
+### Reference
 <https://wiki.archlinux.org/index.php/WPA_supplicant>
