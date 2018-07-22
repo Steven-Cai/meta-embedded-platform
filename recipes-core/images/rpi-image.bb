@@ -8,8 +8,6 @@ IMAGE_FEATURES += " \
 
 WIFI_SUPPORT = " \
     iw \
-    linux-firmware \
-    wpa-supplicant \
 "
 
 DEV_TOOLS = " \
