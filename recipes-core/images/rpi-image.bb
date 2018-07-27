@@ -20,6 +20,7 @@ EXTRA_TOOLS = " \
     lshw \
     ncurses \
     git \
+    tree \
 "
 
 PI_STUFF = " \
