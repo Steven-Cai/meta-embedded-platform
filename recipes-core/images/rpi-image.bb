@@ -21,6 +21,7 @@ EXTRA_TOOLS = " \
     ncurses \
     git \
     tree \
+    systemd-analyze \
 "
 
 PI_STUFF = " \
