@@ -21,6 +21,7 @@ EXTRA_TOOLS = " \
     ncurses \
     git \
     tree \
+    ntp \
     systemd-analyze \
 "
 
