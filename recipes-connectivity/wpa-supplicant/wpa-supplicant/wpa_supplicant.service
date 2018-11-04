@@ -1,0 +1,17 @@
+[Unit]
+Description=WPA supplicant
+Before=network.target
+Wants=network.target
+
+[Service]
+Restart=on-failure
+Type=dbus
+BusName=fi.w1.wpa_supplicant1
+ExeCStartPre=-/bin/bash -c "/usr/bin/pkill wpa_supplicant || true"
+ExeCStartPre=-/bin/bash -c "/usr/sbin/rfkill unblock wifi"
+ExeCStartPre=-/bin/bash -c "/sbin/ifconfig wlan0 up"
+ExecStart=/usr/sbin/wpa_supplicant -u -iwlan0 -c /etc/wpa_supplicant.conf
+
+[Install]
+WantedBy=multi-user.target
+Alias=dbus-fi.w1.wpa_supplicant1.service

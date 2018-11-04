@@ -29,8 +29,10 @@ EXTRA_TOOLS = " \
     git \
     tree \
     ntp \
+    procps \
     systemd-analyze \
     cpufrequtils \
+    whiptail \
 "
 
 PI_STUFF = " \
