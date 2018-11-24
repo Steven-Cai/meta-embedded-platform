@@ -10,6 +10,7 @@ IMAGE_FEATURES += " \
 
 NETWORK = " \
     iw \
+    iperf3 \
     tcpdump \
     bind-utils \
 "
@@ -32,6 +33,8 @@ EXTRA_TOOLS = " \
     procps \
     systemd-analyze \
     cpufrequtils \
+    e2fsprogs-mke2fs \
+    parted \
     whiptail \
 "
 
