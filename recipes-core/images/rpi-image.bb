@@ -44,6 +44,7 @@ PI_STUFF = " \
 
 JAVA = " \
     openjre-8 \
+    openjdk-8 \
 "
 
 IMAGE_INSTALL += " \
