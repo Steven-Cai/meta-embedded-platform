@@ -42,9 +42,14 @@ PI_STUFF = " \
     raspi2fb \
 "
 
+JAVA = " \
+    openjre-8 \
+"
+
 IMAGE_INSTALL += " \
     ${NETWORK} \
     ${DEV_TOOLS} \
     ${EXTRA_TOOLS} \
+    ${JAVA} \
     ${PI_STUFF} \
 "
