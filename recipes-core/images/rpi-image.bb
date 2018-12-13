@@ -18,6 +18,9 @@ NETWORK = " \
 DEV_TOOLS = " \
     python3 \
     python3-pip \
+    openjre-8 \
+    openjdk-8 \
+    nodejs \
     userland \
     strace \
 "
@@ -42,15 +45,9 @@ PI_STUFF = " \
     raspi2fb \
 "
 
-JAVA = " \
-    openjre-8 \
-    openjdk-8 \
-"
-
 IMAGE_INSTALL += " \
     ${NETWORK} \
     ${DEV_TOOLS} \
     ${EXTRA_TOOLS} \
-    ${JAVA} \
     ${PI_STUFF} \
 "
