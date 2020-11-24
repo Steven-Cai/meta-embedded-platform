@@ -1,4 +1,6 @@
-include recipes-core/images/rpi-test-image.bb
+include recipes-core/images/core-image-base.bb
+
+COMPATIBLE_MACHINE = "^rpi$"
 
 DESCRIPTION = "Image for Raspberry Pi platform"
 
@@ -46,8 +48,11 @@ EXTRA_TOOLS = " \
     screen \
 "
 
+MISC = " \
+    systemd-conf \
+"
+
 PI_STUFF = " \
-    rpi-gpio \
 "
 
 IMAGE_INSTALL += " \
@@ -55,5 +60,6 @@ IMAGE_INSTALL += " \
     ${MEDIA} \
     ${DEV_TOOLS} \
     ${EXTRA_TOOLS} \
+    ${MISC} \
     ${PI_STUFF} \
 "
