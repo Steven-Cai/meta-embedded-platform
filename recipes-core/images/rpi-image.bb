@@ -50,6 +50,7 @@ EXTRA_TOOLS = " \
 
 MISC = " \
     systemd-conf \
+    hardware-test \
 "
 
 PI_STUFF = " \
